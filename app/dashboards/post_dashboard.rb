@@ -8,13 +8,13 @@ class PostDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    user: Field::BelongsTo,
-    id: Field::Number,
-    date: Field::DateTime,
-    rationale: Field::String,
-    text: Field::String,
-    created_at: Field::DateTime,
-    updated_at: Field::DateTime,
+    user: Field::BelongsTo.with_options(searchable: false),
+    id: Field::Number.with_options(searchable: false),
+    date: Field::DateTime.with_options(searchable: true),
+    rationale: Field::String.with_options(searchable: true),
+    text: Field::String.with_options(searchable: false),
+    created_at: Field::DateTime.with_options(searchable: false),
+    updated_at: Field::DateTime.with_options(searchable: false),
   }.freeze
 
   # COLLECTION_ATTRIBUTES
