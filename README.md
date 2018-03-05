@@ -3,9 +3,10 @@
 ## Key requirement: company needs documentation that salaried employees did or did not get overtime each week
 
 ## Models
- - Post -> date:date rationale:text
- - User -> Devise
- - AdminUser -> STI
+ - X Post -> date:date rationale:text
+ - X User -> Devise
+ - X AdminUser -> STI
+ - AuditLog
 
 ## Features:
  - Approval Workflow
@@ -16,13 +17,9 @@
  - Needs to be documented if employee did not log overtime
 
 ## UI:
- - Bootstrap -> formatting
- - Icons from Font Awesome
- - Update the styles for forms
+ - X Bootstrap -> formatting
+ - X Icons from glyphicons
+ - X Update the styles for forms
 
 ## Refactor TO DOs:
- - Refactor user association integration test in post_spec
- - Refactor posts/_form for admin user with status
- - Fix post_spec.rb:82 to use factories
- - Fix post_spec.rb:52 to have correct user reference and not require update
-
+ - X Refactor posts/_form for admin user with status

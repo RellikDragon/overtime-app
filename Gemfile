@@ -41,6 +41,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'database_cleaner'
+  gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 end
 
 group :development do
@@ -64,3 +65,4 @@ gem "gritter", "1.2.0"
 gem 'administrate', '~> 0.9.0'
 gem 'bourbon', '~> 5.0'
 gem 'pundit', '~> 1.1'
+gem 'twilio-ruby', '~> 5.7'
