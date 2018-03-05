@@ -22,4 +22,7 @@
  - X Update the styles for forms
 
 ## Refactor TO DOs:
- - X Refactor posts/_form for admin user with status
+ - Integrate validation for phone attr in Users
+ - No spaces or dashes
+ - Exactly 10 characters
+ - All characters have to be an integer
