@@ -2,7 +2,7 @@
                     password: "asdfasdf", 
                     password_confirmation: "asdfasdf", 
                     first_name: "Jon", 
-                    last_name: "Snow"
+                    last_name: "Snow",
                     phone: "3852573517")
 
 puts "1 User created"
@@ -25,10 +25,10 @@ end
 
 puts "100 Posts have been created"
 
-100.times do |post|
+100.times do |audit_log|
   AuditLog.create!(user_id: User.last.id,
-                  status: 0, 
-                  start_date: (Date.today - 6.days)), 
+                  status: 0,
+                  start_date: (Date.today - 6.days))
 end
 
 puts "100 audit logs have been created"
