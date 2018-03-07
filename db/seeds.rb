@@ -15,7 +15,7 @@ AdminUser.create(email: "admin@test.com",
                  phone: "3852573517")
 
 puts "1 Admin User created"
-
+  
 100.times do |post|
   Post.create!(date: Date.today, 
                rationale: "#{post} rationale content", 

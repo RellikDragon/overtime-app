@@ -6,5 +6,6 @@ class AuditLogPolicy < ApplicationPolicy
   private
 
     def admin?
+      admin_types.include?(user.type)
     end
 end
