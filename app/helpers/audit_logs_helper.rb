@@ -1,1 +1,2 @@
-???
+module AuditLogsHelper
+end
